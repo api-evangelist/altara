@@ -1,19 +1,50 @@
 aid: altara
 name: Altara
-description: 'Altara is a company surfaced as a portfolio company of greylock and added to the API Evangelist
-  network as a stub for enrichment. Sector: deep-tech. This profile is a lead awaiting the enrichment
-  pipeline.'
+description: >-
+  Altara is a deep-tech AI company (seed-stage, $7M, backed by Greylock and Jeff
+  Dean) building an agentic scientific intelligence platform for the physical
+  sciences. Its AI agents reason across fragmented technical data — sensor and
+  instrument time series, wafer maps, inspection images, and experimental records
+  — to accelerate R&D-through-manufacturing workflows such as experimental design,
+  yield analysis, anomaly detection, and failure analysis. Altara unifies siloed
+  data in place without migrations, giving agents full operational context across
+  numerical, text, and image sources for semiconductors, advanced materials,
+  batteries, medical devices, specialty chemicals, and industrials. The platform
+  is SOC 2 Type II compliant with encryption, RBAC, SSO, and self-hosted (VPC) or
+  dedicated single-tenant cloud deployment. Altara does not currently publish a
+  public API, SDK, or developer documentation; this profile captures its identity
+  and security posture as a lead for future enrichment.
 url: https://raw.githubusercontent.com/api-evangelist/altara/refs/heads/main/apis.yml
 x-type: company
 x-source: greylock-portfolio
 x-tier: stub
 x-tier-reason: portfolio-lead
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://altara.co/images/altara-og-image.png
 specificationVersion: '0.20'
 created: '2026-07-17'
 modified: '2026-07-17'
 tags:
 - Company
 - Deep Tech
+- Artificial Intelligence
+- AI Agents
+- Physical Sciences
+- Semiconductors
+- Materials Science
+- Manufacturing
+- Scientific Data
+- Failure Analysis
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -21,5 +52,31 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/altara-domain-security.yml
 - type: Website
   url: https://www.altara.co/
+- type: Blog
+  url: https://www.altara.co/blog
+- type: Support
+  url: mailto:hello@altara.co
+- type: TermsOfService
+  url: https://www.altara.co/website-terms
+- type: PrivacyPolicy
+  url: https://www.altara.co/privacy-policy
+- type: TrustCenter
+  url: https://trust.altara.co/
+- type: Compliance
+  url: 'https://www.altara.co/#security'
+- type: LinkedIn
+  url: https://www.linkedin.com/company/altara-technologies/
+- type: Twitter
+  url: https://x.com/altaratech
+- type: TrustCenter
+  name: Trust Center (artifact)
+  url: security/altara-trust-center.yml
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
