@@ -1,0 +1,26 @@
+generated: '2026-07-17'
+method: searched
+probe: false
+source: https://trust.altara.co/
+url: https://trust.altara.co/
+platform: Vanta
+description: >-
+  Altara publishes a Vanta-hosted Trust Center at trust.altara.co and states on
+  its website security section that the platform is SOC 2 Type II compliant
+  ("verified security through independent, third-party certification of our
+  comprehensive internal controls"). The automated trust-center probe did not
+  record this because the Vanta trust report renders client-side (JS) rather than
+  exposing the certifications in server-rendered HTML — this is the searched,
+  human-verified fill. The document catalog behind the Vanta portal is
+  access-gated (report request), so individual report artifacts are not captured.
+certifications:
+  - {name: SOC 2 Type II, availability: on request via Vanta Trust Center}
+controls:
+  - Encryption at rest and in transit (industry-standard protocols)
+  - Role-based access control (RBAC) with org-level permissions
+  - SSO and custom identity provider support
+  - Self-hosted deployment in customer VPC or Altara Cloud (dedicated single-tenant)
+  - Customer data is never used for model training; inputs and outputs remain customer IP
+evidence:
+  - {source: https://trust.altara.co/, keywords: [trust center, vanta, soc 2]}
+  - {source: 'https://www.altara.co/#security', keywords: [soc 2 type ii, encryption, rbac, sso]}
